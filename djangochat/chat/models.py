@@ -5,6 +5,7 @@ from datetime import datetime
 
 class Room(models.Model):
     name=models.CharField(max_length=1000)
+    id=models.AutoField(primary_key=True)
 
 class Message(models.Model):
     value=models.CharField(max_length=1000000)
